@@ -1,8 +1,8 @@
-```java
+
 class Employee {
     private static int counter = 1;
     private int id;
-    private String fullName;
+    private final String fullName;
     private int department;
     private double salary;
 
@@ -75,8 +75,8 @@ public class EmployeeBook {
         double averageSalary = calculateAverageSalary();
         System.out.println("Среднее значение зарплат: " + averageSalary);
 
-// Список Ф. И. О. всех сотрудников
-        System.out.println("Список Ф. И. О. всех сотрудников:");
+// Список Ф.И.О. всех сотрудников
+        System.out.println("Список Ф.И.О. всех сотрудников:");
         for (Employee employee : employees) {
             if (employee != null) {
                 System.out.println(employee.getFullName());
